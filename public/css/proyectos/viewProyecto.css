@@ -1,0 +1,489 @@
+:root{
+    --rojo: #EA411D;
+    --naranja: #F78811;
+}
+
+*{
+    font-family: Roboto;
+}
+
+body{
+    margin: 0px;
+    width: 100%;
+}
+
+.main{
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 14px;
+    margin-left: auto;
+    margin-top: 52px;
+}
+
+@media (min-width: 1400px){
+    .main{
+        margin-top: 52px;
+        margin-right: 0;
+        width: 93%;
+    }
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.main .top button{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-right: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--naranja);
+    width: 100px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.material-icons{
+    cursor: pointer;
+    user-select: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+.textButton, a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    margin-left: 1%;
+}
+
+.proyecto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 1%;
+}
+
+.infoGeneral{
+    width: 97%;
+    display: grid;
+    grid-template-columns: 30% 2.5% 30% 2.5%;
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 10%;
+    row-gap: 20px;
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+label:nth-child(1){
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+label:nth-child(3){
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+label:nth-child(5){
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+label:nth-child(7){
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+label:nth-child(9){
+    grid-column-start: 1;
+    grid-row-start: 5;
+}
+
+label:nth-child(2){
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+label:nth-child(4){
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+label:nth-child(6){
+    display: flex;
+    place-items: center;
+    column-gap: 5px;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+label:nth-child(8){
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+label:nth-child(10){
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+#link1{
+    background-color: var(--naranja);
+    color: black;
+    border-radius: 4px;
+    grid-column-start: 2;
+    grid-row-start: 5;
+    width: 25px;
+    height: 25px;
+}
+
+#link2{
+    background-color: var(--naranja);
+    color: black;
+    border-radius: 4px;
+    grid-column-start: 4;
+    grid-row-start: 5;
+    width: 25px;
+    height: 25px;
+}
+
+label{
+    font-weight: bold;
+}
+
+span{
+    font-weight: normal;
+}
+
+.contenedorFases{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.capaFase{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: baseline;
+    margin-top: 10px;
+    row-gap: 20px;
+}
+
+.fase{
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+    border: 2px black solid;
+    padding: 10px 5px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fase h2{
+    margin: 5px;
+}
+
+.actividad{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border: 2px black solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.actividad h4{
+    text-align: center;
+    margin: 4px;
+}
+
+.actividad span{
+    padding: 5px 15px;
+}
+
+.addDiv{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+}
+
+.material-icons{
+    font-size: 30px;
+}
+
+.material-icons.add{
+    color: var(--rojo);
+}
+.material-icons.view{
+    background-color: var(--naranja);
+    border-radius: 10px;
+    padding: 2px;
+    margin: 0px 5px 5px 0px;
+}
+
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: grid;
+    place-content: center;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 2000;
+}
+
+iframe{
+    width: 45%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.modal__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.suspensionContent{
+    width: 600px;
+}
+
+.activeProject{
+    width: 600px;
+}
+
+.modal__content span{
+    font-size: 33px;
+}
+
+.modal__content .iconClose{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.closeIcon{
+    color: var(--rojo);
+}
+
+.modalActivity{
+    width: 500px;
+    height: 450px;
+}
+
+.modalSuspender{
+    width: 600px;
+    height: auto;
+}
+
+.modalSuspender a, button{
+    border: none;
+    background-color: var(--naranja);
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.modalSuspender a button{
+    width: 150px;
+}
+
+textarea{
+    resize: none;
+    border: black 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.finalizarProyecto{
+    width: 600px;
+}
+
+.finalizarProyecto .botones{
+    margin: 10% 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.finalizarProyecto button{
+    border: none;
+    background-color: var(--naranja);
+    width: 150px;
+    height: 50px;
+    padding: 3%;
+    margin: 0px 2%;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.finalizarProyecto button:nth-child(2){
+    background-color: var(--rojo);
+}
+
+.editActivity{
+    width: 550px;
+    height: 500px;
+}
+
+.editActivity form{
+    display: flex;
+    flex-direction: column;
+}
+
+.editActivity form input, textarea{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.editActivity .campo{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.editActivity button, #save{
+    border: none;
+    background-color: var(--naranja);
+    width: 150px;
+    padding: 3%;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.editActivity button:nth-child(2){
+    background-color: var(--rojo);
+}
+
+.modal__content--contenedor{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2{
+    margin: 2% 0px;
+}
+
+.modal__content--contenedor .infoActividad{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    row-gap: 10px;
+}
+
+.modal__content--contenedor .data1{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(6, 0.5fr);
+    row-gap: 30px;
+    justify-items: end;
+}
+
+.modal__content--contenedor .data1{
+    columns: 1;
+    justify-content: flex-end;
+}
+
+.modal__content--contenedor .data1 .info{
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.botones{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.modalActivity button, #save{
+    border: none;
+    background-color: var(--naranja);
+    width: 40%;
+    margin: 5% auto;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+input span{
+    background-color: var(--naranja);
+    border-radius: 10px;
+    height: 100%;
+    margin-right: 0px;
+    color: black;
+}
+
+
+form{
+    display: grid;
+    row-gap: 5%;
+}
+
+#titleActivity{
+margin-bottom: 10px;
+}
+
+form input, textarea{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+textarea{
+    resize: none;
+}
+
+.campo{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}

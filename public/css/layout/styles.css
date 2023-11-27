@@ -1,0 +1,321 @@
+*{
+    font-family: Roboto;
+}
+
+body{
+    padding: 0px;
+    margin: 0%;
+    border: 0px;
+}
+
+.material-icons{
+    cursor: pointer;
+    user-select: none;
+}
+
+.header__navBar{
+    display: flex;
+    background: #EA411D;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.header__navBar__iconsleft{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 52px;
+    width: 100%;
+}
+
+.material-icons.md-200 {
+    font-size: 200%;
+    color: rgb(0, 0, 0);
+    display: inline;
+    padding: 10px;
+}
+
+
+#menu{
+    color: white;
+}
+
+.header__navBar__iconsleft__userName{
+    display: inline-block;
+    font-size: 150%;
+    color: black;
+    margin: 0px;
+}
+
+
+.header__navBar #userIcon{
+    margin-left: 8%;
+    color: black;
+}
+
+.header__navBar__iconsRight{
+    display: flex;
+    justify-content: right;
+    column-gap: 15px;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.navLateral{
+    background: #EA411D;
+    width: 7%;
+    height: 650px;
+    display: inline-block;
+    justify-content: center;
+    position: fixed;
+    margin-top: 2.7%;
+}
+
+@media (min-width: 1600px){
+    .navLateral{
+        height: 925px;
+    }
+}
+
+.navLateral__sidebar{
+    display: inline;
+    margin-top: 0px;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.material-icons.md-100 {
+    vertical-align: top;
+    font-size: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.navLateral li{
+    list-style-type: none;
+    padding-bottom: 11%;
+    color: white;
+    text-align: center;
+}
+
+li a{
+    color: white;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+iframe{
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: auto;
+}
+
+.divPrueba{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
+
+.visibleLayout{
+    display: flex;
+}
+
+.modalLayout{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    position: fixed;
+    margin-left: 0px;
+    border-radius: 0px;
+    z-index: 2000;
+}
+
+.modalLayout .modalLogout{
+    margin-right: 35px;
+    margin-left: auto;
+    background-color: white;
+    width: 150px;
+    height: 38px;
+    border-radius: 10px;
+}
+
+.modalLayout .modalLogout form{
+    text-align: center;
+}
+
+.modalLayout .modalLogout button{
+    font-size: 15px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #ffa500;
+    border: none;
+    padding: 10px;
+}
+
+.modalLayout .modalNotifications{
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: 80px;
+    border-radius: 10px;
+}
+
+.modalLayout .modalNotifications ul{
+    margin-block-start: 0px;
+    padding-inline-start: 0px;
+    margin-block-end: 0px;
+}
+
+.modalLayout .modalNotifications li{
+    color: black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: left;
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+.modalLayout .modalHelp{
+    background-color: white;
+    width: 40%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: 250px;
+    border-radius: 10px;
+}
+
+.modalLayout .modalHelp h2{
+    margin-left: 10px;
+}
+
+.modalLayout figure{
+    text-align: center;
+}
+
+.modalLayout img{
+    width: 520px;
+}
+
+@media (max-width: 1680px) {
+    .navLateral{
+        width: 6%;
+    }
+    .material-icons.md-100{
+        font-size: 65px;
+    }
+    li a{
+        font-size: 75%;
+    }
+    .header__navBar #userIcon{
+        margin-left: 2%;
+    }
+    .modalLayout .modalHelp{
+        margin-left: auto;
+        margin-right: 180px;
+    }
+
+    .modalLayout .modalHelp img{
+        width: 330px;
+    }
+}
+
+.contenedorpaginacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafoPaginación{
+    font-size: 20px;
+    color: #EA411D;
+}
+
+.contenedorpaginacion nav{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.contenedorpaginacion nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contenedorpaginacion nav .d-none{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.contenedorpaginacion nav div ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    width: 100%;
+    list-style-type: none;
+}
+
+.contenedorpaginacion nav div ul li{
+    background: orange;
+    padding: 5px;
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contenedorpaginacion nav div ul li a{
+    color: black;
+}
+
+.contenedorpaginacion nav .d-none div .pagination{
+    width: 30%;
+}
+
+.contenedorpaginacion nav .d-none div .pagination li{
+    width: 30px;
+}
+
+@media screen and (min-width: 1400px) {
+    .contenedorpaginacion nav .d-none div .pagination{
+        width: 20%;
+    }
+}
+
+.modalNotifications .eventoHoy{
+    text-decoration: none;
+    color: black;
+    background-color: #ffa500;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 2%;
+    padding: 1%;
+}
+
+@media (max-width: 1680px) {
+    .modalNotifications .eventoHoy{
+        padding: 1.5%;
+        font-size: 15px;
+    }
+}

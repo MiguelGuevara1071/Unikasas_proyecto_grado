@@ -1,0 +1,7 @@
+.modal__content{
+    margin: 50px auto;
+}
+
+.botones .cancel{
+    background-color: red;
+}

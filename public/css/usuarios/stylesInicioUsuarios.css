@@ -1,0 +1,154 @@
+*{
+    font-family: Roboto;
+}
+
+.workspace{
+    width: 100%;
+}
+
+.workspace .titleModule{
+    text-align: center;
+    margin: 60px 0px 0px 0px;
+    font-size: 48px;
+}
+
+.workspace .searchForm{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+.workspace form #searchBar{
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.workspace form input[type= submit]{
+    height: 30px;
+    background: orange;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: orange;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.buttonCreateProject, .buttonArchived, .buttonCreateReport{
+    color: black;
+    text-decoration: none;
+}
+
+.lista-usuarios {
+    text-align: center;
+}
+
+.usuarios{
+    display: flex;
+    flex-direction: column;
+    margin: 0 80px;
+}
+
+@media screen and (max-width: 1600px){
+    .usuarios{
+        margin: 0 20px;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+section{
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 1100px;
+    margin: 0 auto 2% auto;
+}
+
+@media (max-width: 1600px){
+    section{
+        width: 800px;
+    }
+}
+
+.info {
+    width: 600px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor a{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+@media (min-width: 1920px){
+    .contenedor a{
+        margin-top: 12%;
+        margin-left: 12%;
+    }
+}
+
+section svg{
+    padding: 2%;
+    display: inline-block;
+    width: 80px;
+    height: auto;
+}
+
+.icono {
+    width: 120px;
+    height: 120px;
+    margin-left: 0;
+}
+
+.roles {
+    text-align: center;
+}
+
+.visualizar{
+    border-radius: 10px;
+    background-color: orange;
+    padding: 0 20px;
+    height: 40px;
+    color: black;
+    margin-top: 0px !important;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.foto {
+    border: solid black;
+    border-radius: 50%;
+    width: 7.4rem;
+    height: 7.4rem;
+}

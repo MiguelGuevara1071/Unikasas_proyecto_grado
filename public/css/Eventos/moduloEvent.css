@@ -1,0 +1,258 @@
+:root {
+    --orange: #ffa500;
+    --black: #000000;
+    --white: #ffffff;
+    --red: #EA411D;
+}
+
+*{
+    font-family: "Roboto";
+}
+
+body{
+    padding: 0px;
+    margin: 0%;
+    border: 0px;
+}
+
+.global{
+    overflow-x: hidden;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+.workspace{
+    width: 92%;
+    margin-top: 60px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.workspace .titleModule{
+    text-align: center;
+    margin: 0px;
+    font-size: 48px;
+}
+
+.workspace .searchForm{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 30px;
+}
+
+.workspace form #searchBar{
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: var(--black);
+    padding: 5px;
+    font-size: 16px;
+}
+
+.workspace form input[type= submit]{
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100px;
+    background: var(--orange);
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 16px;
+}
+
+.filter{
+    display: inline;
+}
+
+.filter select{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.workspace aside{
+    display: inline-block;
+    margin-left: 1%;
+    width: auto;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--orange);
+    width: 150px;
+    height: 40px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+@media (max-width: 1366px){
+    .visualizar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: var(--orange);
+        width: 150px;
+        height: 40px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        color: var(--black);
+        text-decoration: none;
+    }
+
+}
+
+@media (max-width: 1920px){
+    .visualizar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: var(--orange);
+        width: 150px;
+        height: 40px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        color: var(--black);
+        text-decoration: none;
+    }
+
+}
+
+.buttonCreateEvento, .buttonDisponibilidad, .buttonCreateReporte{
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.container{
+    display: flex;
+    vertical-align: top;
+}
+
+section{
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 89%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.contenedor{
+    display: flex;
+    /* width: 1200px; */
+}
+
+.section__infoEvento{
+    width: 750px;
+}
+
+.contenedor a{
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+@media (min-width: 1920px){
+    .contenedor a{
+        margin-top: 12%;
+        margin-left: 12%;
+    }
+    .visualizar {
+        margin-left: 140%;
+    }
+    .section__infoEvento{
+        width: 1280px;
+    }
+    .contenedor-secundario{
+        width: 190px;
+    }
+}
+
+.contenedor-secundario{
+    padding: 2%;
+    display: inline-block;
+    width: 190px;
+    height: auto;
+    margin: 1.5%;
+    background-color: var(--orange);
+    border-radius: 10px;
+}
+
+time {
+    display: block;
+    font: bold 15% var(--negro);
+    text-align: center;
+}
+
+.fecha, .hora {
+    text-align: center;
+    font: bold 20% var(--negro);
+    font-size: 140%;
+}
+
+.dia {
+    font-size: 370%;
+}
+
+div h2 {
+    margin-top: 2%;
+}
+
+@media (min-width: 1366px){
+    div h2 {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 1920px){
+    h2 .responsive{
+        margin-top: 10%;
+    }
+}
+
+/* .section__infoProyecto{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto;
+    width: 50%;
+    justify-content: end;
+    padding-left: 1%;
+}
+
+.info:nth-child(1){
+    grid-column: 1 / 3;
+} */
+
+/* css de paginacion */
+.pagination .page-item{
+    display: inline-flex;
+    background-color: #ffa500;
+    padding: 1%;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.small{
+    display: none;
+}
+
+.d-sm-none{
+    display: none;
+}

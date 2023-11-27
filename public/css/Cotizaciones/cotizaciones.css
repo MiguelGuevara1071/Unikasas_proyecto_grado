@@ -1,0 +1,255 @@
+.main{
+    margin-top: 60px;
+}
+
+.mainTable{
+    margin-top: 20px;
+}
+
+.info{
+    border: none;
+    padding-top: 0.5%;
+}
+
+.tituloModulo{
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+#tabla{
+    margin-left: 0;
+    margin-right: auto;
+}
+
+h1{
+    font-weight: bold;
+}
+
+.global{
+    width: 92%;
+    margin-top: 60px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 20% 80%);
+}
+
+@media(max-width: 1366px){
+  .grid .botones{
+    margin-left: 98px;
+    margin-bottom: 1%;
+    padding: 0;
+    border-radius: 10px;
+  }
+}
+
+@media(max-width: 1920px){
+  .botones{
+    margin-left: 190px;
+    margin-bottom: 1%;
+    padding: 0;
+    border-radius: 10px;
+  }
+}
+
+.modal-footer .btn-primary{
+    background-color: #ffa500;
+    width: 6rem;
+    border: none;
+    margin-right: 7rem;
+    font-weight: 500;
+    color: black;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.modal-footer .btn-primary:hover{
+    background-color: #ffa600e3;
+}
+
+.modal-footer .btn-secondary{
+    background-color: #EA411D;
+    width: 6rem;
+    border: none;
+    margin-right: 1rem;
+    font-weight: 500;
+    color: black;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.modal-footer .btn-secondary:hover{
+    background-color: #ea431dda;
+}
+
+.buscar{
+    width: 12%;
+    font-size: 1.20rem;
+    font-weight: 600;
+    background-color: #ffa500;
+    margin-bottom: 1%;
+    font-style: normal;
+    font-weight: lighter;
+    border-radius: 8px;
+    padding: 0.3%;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.buscar:hover{
+    background-color: #ffa600e3;
+}
+
+.container .row .color{
+    background-color: #ffa500;
+    text-align: center;
+    padding: 0.5%;
+    font-weight: 500;
+}
+
+.button{
+    background-color: #ffa500;
+    border-radius: 8px;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.button:hover{
+    background-color: #ffa600e3;
+    border-radius: 10px;
+}
+
+.buttonDos{
+    background-color: #EA411D;
+    border: none;
+    font-size: 1.20rem;
+    font-weight: 500;
+    width: 90%;
+    color: black;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.buttonDos:hover{
+    color: black;
+    background-color: #ea431dda;
+    border-radius: 10px;
+}
+
+.buttonUno{
+    font-size: 1.20rem;
+    font-weight: 500;
+    width: 90%;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.buttonUno:disabled{
+    background-color: #ffa600;
+    opacity: 0.7;
+}
+
+.buttonRegresar{
+    font-size: 1.20rem;
+    font-weight: 500;
+    background-color: #ffa500;
+    border-radius: 8px;
+}
+
+.buttonRegresar:hover{
+    background-color: #ffa600e3;
+}
+
+.icono{
+    font-weight: bold;
+    width: 25;
+    height: 30;
+}
+
+.formborder{
+    border: 1.5px solid black;
+    border-radius: 8px;
+}
+
+.formborderDos{
+    border: 1px solid black;
+}
+
+.inputValidate span{
+    font-size: 15px;
+    color: gray;
+}
+
+.borderBusqueda{
+    border-radius: 8px;
+}
+
+.small{
+    display: none;
+}
+
+.justify-content-sm-between{
+    justify-content: flex-start!important;
+}
+
+.pagination li{
+    border-radius: 10px;
+    margin-right: 4px!important;
+    font-weight: 600!important;
+}
+
+.pagination li span{
+    background-color: #ffa500!important;
+    color: #000000!important;
+    font-weight: 600;
+    border-radius: 10px!important;
+    border: none;
+}
+
+.pagination a{
+    background-color: #ffa500!important;
+    color: #fff!important;
+    font-weight: 600;
+    border-radius: 10px!important;
+    border: none;
+}
+
+@media(max-width: 1366px){
+    .divPrueba .navLateral {
+        margin-top: 2.0%;
+    }
+}
+
+@media(max-width: 1920px){
+    .navLateral {
+        margin-top: 2.5%;
+    }
+}
+
+.global{
+    overflow-x: hidden;
+}
+
+.contenedorPaginacion{
+    display: inline flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content:
+    flex-start!important;
+    margin-left: 20%
+}
+
+.parrafoPaginacion{
+    display: inline flex;
+    justify-content: flex-start!important;
+}

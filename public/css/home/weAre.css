@@ -1,0 +1,8 @@
+.workspace{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr;
+    place-content: top;
+    width: 100%;
+    margin-top: 20px;
+    column-gap: 10px;
+}

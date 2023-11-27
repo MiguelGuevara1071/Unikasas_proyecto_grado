@@ -1,0 +1,306 @@
+body{
+    margin: 0px;
+}
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 13px;
+    margin-left: auto;
+    margin-top: 52px;
+}
+
+@media (min-width: 1400px){
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 52px;
+        margin-right: 0px;
+        margin-left: auto;
+        width: 93%;
+    }
+    .maincenter {
+        width: 90%;
+        margin-right: 0px;
+        margin-left: auto;
+    }
+}
+
+h1{
+    text-align: center;
+}
+
+/*Estructuracion barra de busqueda*/
+
+.searchForm{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchForm input{
+    margin-left: 10px;
+}
+
+.searchForm .searchBar{
+    width: 55%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.searchForm .send{
+    background-color: #F78811;
+    padding: 7px;
+    border-radius: 10px;
+    width: 15%;
+    border: none;
+}
+
+.bottonsearch{
+   /* font-size: 1.5rem;*/
+    width: 6rem;
+  background-color: #F78811;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(14, 13, 13);
+    height: 2rem;
+    margin-right: 4rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#select{
+    height: 2rem;
+    border-radius: 10px;
+    width: 10rem;
+
+}
+
+.botonP a{
+    text-decoration: none;
+    color: black;
+}
+
+.botonP{
+    text-transform: uppercase;
+    padding: 10px;
+    background-color:#F78811;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.maincenter{
+    width: 80%;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+@media screen and (min-width: 1400px){
+    .maincenter{
+        width: 89%;
+        margin-right: 0px;
+        margin-left: auto;
+    }
+}
+
+.MatrizProductos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+img{
+    width: 100%;
+}
+
+.caja{
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nombre" "imagen" "botones";
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: white;
+    place-items: center;
+}
+
+.caja img{
+    max-width: 250px;
+    max-height: 190px;
+}
+
+.caja h2{
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+svg{
+    stroke: black;
+}
+
+.eye{
+    background-color: #F78811;
+    margin: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.x{
+    background-color:#EA411D;
+    margin: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.carShop{
+    background-color:#63AF5D;
+    margin: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.label{
+    display: flex;
+    justify-content: center;
+}
+
+.prueba{
+    display: flex;
+    margin-top: 2rem;
+    width: 99%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+h2{
+    color: black;
+    margin: 0;
+}
+
+.espacio{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    place-items: center;
+    margin-bottom:auto;
+}
+.iconos{
+    display: flex;
+    justify-content: space-evenly;
+    width: 15rem;
+}
+
+/*Creacion de la ventana emergente despublicar producto*/
+
+.ventana{
+    background: #CAC8C7;
+    width: 40rem;
+    height: 20rem;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    left: 21rem;
+    bottom: 2rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#canc:checked ~.ventana{
+        opacity: 1;
+        visibility: visible;
+}
+
+.accept a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.cancel a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.accept{
+    background: #F78811;
+    border: solid 1px;
+    border-radius: 5px;
+    width: 6rem;
+    height: 2rem;
+    margin-right: 5rem;
+}
+
+.cancel{
+    background:#EA411D;
+    border: solid 1px;
+    border-radius: 5px;
+    width: 6rem;
+    height: 2rem;
+
+}
+.Botones{
+    justify-content: center;
+}
+.botonAcepCan{
+    display: flex;
+    position:relative;
+    left:10rem;
+    top: 11rem;
+}
+
+.despublicar{
+    position:relative;
+    top: 4rem;
+
+}
+
+#iconCancel{
+    position: relative;
+    bottom: 3rem;
+    left: 18rem;
+}
+
+#aceptar{
+    cursor: pointer;
+}
+#cancelar{
+    cursor: pointer;
+}
+
+#confirmar{
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#irse{
+    cursor: pointer;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}

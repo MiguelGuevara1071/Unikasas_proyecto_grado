@@ -1,0 +1,222 @@
+:root{
+    --rojo: #EA411D;
+    --naranja: #F78811;
+    --negro: #000000;
+}
+
+*{
+    font-family: Roboto;
+}
+
+body{
+    width: 89%;
+}
+
+.global{
+    width: 92%;
+    margin-top: 60px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.main .top .button{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-right: auto;
+    border: none;
+    cursor: pointer;
+}
+
+h1{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.contenedor-campos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: .7%;
+}
+
+.campo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+    width: 100%;
+}
+
+.campo label{
+    display: flex;
+    justify-content: end;
+    width: 30%;
+    padding-right: 2%;
+    font-weight: 700;
+}
+
+@media (min-width: 1920px){
+   .formulario .campo label{
+    display: flex;
+    margin-block-end: 500;
+    }
+}
+
+.campo input{
+    display: inline;
+    width: 90%;
+    border-radius: 10px;
+    border: 2px solid var(--negro);
+    padding: 7px;
+    font-size: 16px;
+}
+
+textarea{
+    display: inline;
+    width: 50%;
+    border-radius: 10px;
+    border: 2px solid var(--negro);
+    padding: 7px;
+    font-size: 16px;
+}
+
+.campo .campomedio{
+    text-align: left;
+    width: 40%;
+    margin-right: 40%;
+}
+
+.campo .date{
+    width: 28%;
+}
+
+.campo .fecha label{
+    padding-right: 0px;
+}
+
+.horario{
+    display: grid;
+    grid-template-columns: repeat(4, 25% [col-start]);
+    justify-items: right;
+}
+
+.campo .hora{
+    width: 89%;
+    grid-column-start: col-start 1;
+}
+
+.campo .address{
+    width: 89%;
+}
+
+.botones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    vertical-align: center;
+}
+
+.botones a{
+    background-color: var(--naranja);
+    text-decoration: none;
+    padding: 10px 40px;
+    color: var(--negro);
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="submit"], input[type="button"]{
+    background-color: var(--naranja);
+    text-decoration: none;
+    padding: 10px 40px;
+    color: var(--negro);
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botones a:nth-child(2){
+    background-color: var(--rojo);
+}
+
+.confirmar{
+    background-color: var(--naranja);
+}
+
+.cancelar{
+    background-color: var(--rojo);
+}
+
+.campoCompartido{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    column-gap: 3px;
+    justify-items: end;
+}
+
+textarea{
+    grid-column-start: 4;
+    width: 97%;
+    resize: none;
+    border-radius: 10px;
+    border: 2px solid var(--negro);
+    padding: 5px;
+    grid-column-start: 2;
+}
+
+.campoCompartido label{
+    width: 60%;
+}
+
+/*Styles para el mensaje de validación*/
+
+.inputValidate {
+    width: 100%;
+}
+
+.inputValidate span{
+    font-size: 12px;
+    color: gray;
+}
+
+.campo .inputValidate{
+    display: flex;
+    flex-direction: column;
+}
+
+.campoProducto .inputValidate{
+    width: 34%;
+}

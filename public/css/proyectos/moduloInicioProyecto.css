@@ -1,0 +1,139 @@
+*{
+    font-family: Roboto;
+}
+
+body{
+    margin: 0px;
+}
+
+.global{
+    width: 92%;
+    margin-top: 60px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.titleModule{
+    text-align: center;
+    font-size: 48px;
+    margin-top: 0px;
+}
+
+.searchForm{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 30px;
+}
+
+form #searchBar{
+    width: 40%;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+form input[type= submit]{
+    height: 30px;
+    background: orange;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.filter{
+    display: inline;
+}
+
+.filter input{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+aside{
+    display: inline-block;
+    width: auto;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: orange;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.buttonCreateProject, .buttonArchived, .buttonCreateReport{
+    color: black;
+    text-transform: uppercase;
+}
+
+.container{
+    display: flex;
+    vertical-align: top;
+}
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section{
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 25% 55% 15%;
+    width: 100%;
+    column-gap: 20px;
+}
+
+.contenedor a{
+    margin: auto 10% 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+section img{
+    max-width: 250px;
+    max-height: 200px;
+    height: auto;
+    padding: 5%;
+    margin: auto;
+}
+
+@media screen and (min-width: 1400px){
+    section img{
+        max-width: 300px;
+        max-height: 200px;
+    }
+}
+
+
+.section__infoProyecto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    justify-content: end;
+    padding-left: 2%;
+}
+
+.info:nth-child(1){
+    grid-column: 1 / 3;
+}

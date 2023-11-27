@@ -1,0 +1,128 @@
+.modal-botones button{
+    border: none;
+}
+.modal-container{
+    visibility: hidden;
+    position:fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    width: 40%;
+    height: 30%;
+    background: white;
+   /* overflow: hidden;*/
+   border-radius: 20px;
+   justify-content: space-evenly;
+   position:relative;
+   transition:transform 1s;
+    transform:translateY(0%);
+}
+.modal-close{
+    transform: translateY(200);
+}
+.modal-textos{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 5%;
+    font-size: 20px;   
+}
+.modal-botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 70px;
+    
+}
+#aceptar{
+    background: orange;
+    width:130px;
+    height:50px;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+#cancelar{
+    background: rgb(221, 30, 30);
+    width: 130px;
+    height:50px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.segunda-modal{
+    visibility: hidden;
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-modal{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 5%;
+    font-size: 20px;   
+}
+.botones-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.irse{
+    display: flex;
+    justify-content: end;
+    margin: 10px 10px auto auto;
+}
+
+.irse button{
+    background: red;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 35px;
+}
+
+#confirmar{
+    background: orange;
+    width:130px;
+    height:50px;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+.contenedor-modales{
+    width: 60%;
+    height: 40%;
+    background: white;
+   /* overflow: hidden;*/
+   border-radius: 20px;
+   justify-content: space-evenly;
+   position:relative;
+   transition:transform 1s;
+    transform:translateY(0%);
+}
+.texto-Modal{
+    font-size: 17px;
+    margin: 50px;
+}
+.botones-modal button{
+    border: none;
+}
